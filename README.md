@@ -1,34 +1,13 @@
 nexus-pagedecoration-plugin
 ===========================
 
+This plugin extends the Administration section of the Nexus UI with a menu item "Page Decoration".
+The associated page provides 4 text areas where HTML fragments can be added. One for each
+extension point:
+* Pre Head
+* Post Head
+* Pre Body
+* Post Body
 
-
-pre head
-
-<style type="text/css">
-div#branding img {
-display:none;
-}
-#head-link-r {
-color: #d8006f;
-}
-div#logo {
-color: grey;
-}
-
-div#header {
-background-color: white;
-background-image: none;
-}
-</style>
-<script src="/js/require-2.1.11.js"></script>
-<script>
-require(["/js/jquery-1.8.3.min.js"], function(util) {
-  require(["/js/nexus-bar.js"], function(util) {
-    // nothing to do
-  });
-  require(["/js/panel.js"], function(util) {
-    // nothing to do
-  });
-});
-</script>
+Once the changes have been saved and the Nexus UI page has been reloaded, the fragments will be
+rendered into the Nexus UI HTML page.
