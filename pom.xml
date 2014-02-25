@@ -81,4 +81,29 @@
     </plugins>
   </build>
 
+  <repositories>
+    <repository>
+      <id>sonatype-forge</id>
+      <url>http://repository.sonatype.org/content/groups/forge/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+  <pluginRepositories>
+    <pluginRepository>
+      <id>sonatype-forge</id>
+      <url>http://repository.sonatype.org/content/groups/forge/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </pluginRepository>
+  </pluginRepositories>
+
 </project>
